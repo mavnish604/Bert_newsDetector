@@ -1,6 +1,6 @@
 import pandas as pd
 from sentence_transformers import SentenceTransformer
-from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import train_test_split
 import joblib
 import os
@@ -38,8 +38,8 @@ def main():
     
     train_embeddings = model.encode(X_train.tolist(), show_progress_bar=True)
     
-    print("Training LogisticRegression classifier...")
-    clf = LogisticRegression(max_iter=1000)
+    print("Training GaussianNB classifier...")
+    clf = GaussianNB()
     clf.fit(train_embeddings, y_train)
     
     print(f"Saving classifier to {CLASSIFIER_SAVE_PATH}...")

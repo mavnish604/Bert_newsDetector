@@ -135,11 +135,11 @@ def main():
         st.header("About")
         st.write("This application uses a **SentenceTransformer** (all-MiniLM-L6-v2) fine-tuned on the WELFake dataset.")
         st.write("The fine-tuning used **BatchHardTripletLoss** to pull similar news together and push fake/real embeddings apart.")
-        st.write("A **Logistic Regression** classifier is used on top of the embeddings for the final prediction.")
+        st.write("A **Gaussian Naive Bayes** classifier is used on top of the embeddings for the final prediction.")
         st.divider()
         st.write("📊 **Model Specs**")
         st.write("- Base: MiniLM-L6-v2")
-        st.write("- Classifier: Logistic Regression")
+        st.write("- Classifier: Gaussian Naive Bayes")
         st.write("- Accuracy: ~99%")
 
 if __name__ == "__main__":
