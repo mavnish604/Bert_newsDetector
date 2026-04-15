@@ -25,13 +25,17 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
+/data
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
-
+fake_news_model/checkpoint-7154
+fake_news_model/checkpoint-6735
+fake_news_model/checkpoint-4490
+fake_news_model/checkpoint-3577
+fake_news_model/checkpoint-2245
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
